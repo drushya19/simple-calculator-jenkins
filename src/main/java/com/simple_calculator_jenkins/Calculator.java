@@ -1,6 +1,4 @@
-
-package com.simple_calculator_jenkins;
-
+package com.Calculator_Jenkins;
 public class Calculator {
     public int add(int a, int b) { 
         return a + b; 
@@ -8,6 +6,22 @@ public class Calculator {
     public int subtract(int a, int b) { 
         return a - b; 
     }
+    
+    public boolean isPositive(int number) {
+        if (number > 0) {
+            return true;
+        } else if(number < 0){
+            return false;
+        }
+        else if(number > 0){
+            return true;
+        }
+        else {
+        	return false;
+
+    }
+    }
+
 
     public static void main(String[] args) {
         Calculator calc = new Calculator();
